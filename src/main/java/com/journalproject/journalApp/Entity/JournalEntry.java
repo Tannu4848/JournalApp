@@ -9,16 +9,13 @@ import java.util.Date;
 
 @Document
 public class JournalEntry {
-
-    private String name;
-
-
-    private String notes;
-
-    private LocalDateTime date;
-
     @Id
     private ObjectId id;
+    private String name;
+    private String notes;
+    private LocalDateTime date;
+
+
 
     public ObjectId getId() {
         return id;
